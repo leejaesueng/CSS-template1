@@ -1,0 +1,241 @@
+/* common */
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* header */
+.header {
+  background: #383838;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+.header header {
+  width: 70%;
+}
+.header .gtn {
+  float: left;
+}
+.header .gtn a {
+  padding: 0 10px;
+  color: #fff;
+  font-size: 16px;
+}
+.header .gtn a:first-child {
+  color: #fff;
+  font-weight: 700;
+}
+.header .gtn a:hover {
+  color: #ccc;
+}
+.header .tbn {
+  float: right;
+}
+.header .tbn a {
+  display: block;
+  float: left;
+  font-size: 20px;
+  margin-right: 20px;
+  line-height: 65px;
+  color: #fff;
+  transition: 0.3s;
+}
+.header .tbn a:hover {
+  transform: scale(1.5);
+}
+
+/* main */
+section.main {
+  background: url(../img/main.jpg) no-repeat center 70px / cover;
+  background-attachment: fixed;
+  height: 800px;
+}
+section.main .title {
+  width: 700px;
+  background: #222;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  opacity: 0.9;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -80%);
+  transition: 0.4s;
+}
+section.main .title:hover {
+  background: #ccc;
+  color: #383838;
+}
+section.main .title:hover a h1 {
+  color: #383838;
+}
+section.main .title h1 {
+  font-size: 80px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+section.main form {
+  position: absolute;
+  z-index: 10;
+  top: 60%;
+  left: 35%;
+}
+section.main form input {
+  width: 500px;
+  height: 40px;
+  font-size: 1.2rem;
+  padding: 0 20px;
+  font-weight: 700;
+}
+section.main form button {
+  margin-left: -5px;
+  padding: 10px;
+  /* border-radius: 10px; */
+  /* border: 1px solid #fff; */
+  background: #383838;
+  color: #fff;
+  cursor: pointer;
+  font-size: 21px;
+}
+
+/* article */
+section.article {
+  /* background: orange; */
+  /* border: 1px solid #000;
+    box-sizing: border-box; */
+  width: 50%;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+section.article .one {
+  width: 32%;
+  height: 400px;
+  position: relative;
+  /* border: 1px solid #ddd; */
+  box-sizing: border-box;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 10px #ccc;
+  transition: 0.4s;
+}
+
+section.article .one .user {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+section.article .one .user i {
+  float: left;
+  font-size: 30px;
+  margin-right: 10px;
+  color: #ccc;
+}
+section.article .one .user .admin {
+  font-size: 12px;
+}
+section.article .one .user .admin p {
+  float: left;
+  width: 85%;
+}
+section.article .one .img-box {
+  height: 145px;
+  overflow: hidden;
+}
+section.article .one .img-box img {
+  width: 100%;
+}
+section.article .one:hover {
+  transform: scale(0.95);
+}
+
+section.article .one:nth-child(3n) {
+  margin-right: 0;
+}
+
+section.article .one .sub {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 15px;
+}
+section.article .one .sub i.fa-heart {
+  color: red;
+}
+section.article .one .contents a {
+  font-size: 13px;
+}
+section.article .one .contents a:hover {
+  color: rgb(91, 148, 255);
+}
+section.article .one .contents a p:first-child {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 100px;
+  background: #383838;
+  color: #aaa;
+  line-height: 100px;
+}
+footer .inner-footer {
+  width: 70%;
+  /* background: orange; */
+}
+footer .inner-footer ul.icon {
+  float: left;
+  font-size: 20px;
+  /* background: skyblue; */
+}
+footer .inner-footer ul.icon li {
+  float: left;
+  margin-right: 20px;
+}
+footer .inner-footer ul.icon li a {
+  color: #fff;
+}
+footer .inner-footer p {
+  float: left;
+  font-size: 14px;
+  margin-left: 30px;
+}
+footer .inner-footer > a {
+  float: right;
+  font-size: 30px;
+  /* border: 1px solid #fff; */
+  color: #fff;
+  transition: 0.4s;
+}
+footer .inner-footer > a:hover {
+  color: #aaa;
+  transform: scale(1.5);
+}
+footer .inner-footer p span {
+  text-decoration: underline;
+  color: #aaa;
+}
